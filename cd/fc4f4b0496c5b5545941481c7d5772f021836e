@@ -1,0 +1,32 @@
+.gitattributes
+  h_90c9c948bf5ad1 1-4
+.gitignore
+  h_90c9c948bf5ad1 1-6
+LICENSE
+  h_90c9c948bf5ad1 1-21
+README.md
+  h_90c9c948bf5ad1 1-87
+SECURITY.md
+  h_90c9c948bf5ad1 1-22
+scripts/yearning-panel-resizer.user.js
+  h_90c9c948bf5ad1 1-372
+scripts/yearning-query-result-datetime-formatter.user.js
+  h_90c9c948bf5ad1 1-164
+scripts/yearning-query-result-view-switcher.user.js
+  h_90c9c948bf5ad1 1-1724
+scripts/yearning-sql-change-row-counter.user.js
+  h_90c9c948bf5ad1 1-1326
+scripts/yearning-table-search-filter.user.js
+  h_90c9c948bf5ad1 1-2024
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "cdfc4f4b0496c5b5545941481c7d5772f021836e",
+  "prompts": {},
+  "humans": {
+    "h_90c9c948bf5ad1": {
+      "author": "codex <codex@users.noreply.github.com>"
+    }
+  }
+}
