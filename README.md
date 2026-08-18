@@ -6,13 +6,13 @@
 
 ## 脚本列表
 
-| 脚本 | 功能 | 额外说明 |
-| --- | --- | --- |
-| [数据库表名搜索结果过滤](scripts/yearning-table-search-filter.user.js) | 缓存完整表列表，增强表名过滤，并提供复制表名、查看表数据和查看表结构等右键菜单 | 查看表数据时执行 `SELECT * ... LIMIT 100`；默认最多展示 200 行 |
-| [左右面板拖拽调整](scripts/yearning-panel-resizer.user.js) | 在数据库树和 SQL 编辑区之间加入可拖拽分隔条 | 面板比例仅保存在当前站点的 `localStorage` |
-| [SQL 变更行数检测](scripts/yearning-sql-change-row-counter.user.js) | 将选中的或全部 `UPDATE`、`DELETE`、`INSERT INTO ... SELECT` 转换为只读统计查询，预估实际变更行数 | 依赖固定版本的 `@msgpack/msgpack` CDN 文件；不会执行原始 DML |
-| [查询结果时间格式化](scripts/yearning-query-result-datetime-formatter.user.js) | 将查询结果中的 JavaScript Date 字符串格式化为 `yyyy-MM-dd HH:mm:ss` | 无额外配置 |
-| [查询结果视图切换](scripts/yearning-query-result-view-switcher.user.js) | 在网格视图和逐条表单视图之间切换，并显示字段 `COMMENT` | 通过 Yearning 同源接口读取字段注释 |
+| 脚本 | 英文名称 | 功能 | 额外说明 |
+| --- | --- | --- | --- |
+| [数据库表名搜索结果过滤](scripts/yearning-table-search-filter.user.js) | Yearning Table Search Filter | 缓存完整表列表，增强表名过滤，并提供复制表名、查看表数据和查看表结构等右键菜单 | 查看表数据时执行 `SELECT * ... LIMIT 100`；默认最多展示 200 行 |
+| [左右面板拖拽调整](scripts/yearning-panel-resizer.user.js) | Yearning Panel Resizer | 在数据库树和 SQL 编辑区之间加入可拖拽分隔条 | 面板比例仅保存在当前站点的 `localStorage` |
+| [SQL 变更行数检测](scripts/yearning-sql-change-row-counter.user.js) | Yearning SQL Change Row Counter | 将选中的或全部 `UPDATE`、`DELETE`、`INSERT INTO ... SELECT` 转换为只读统计查询，预估实际变更行数 | 依赖固定版本的 `@msgpack/msgpack` CDN 文件；不会执行原始 DML |
+| [查询结果时间格式化](scripts/yearning-query-result-datetime-formatter.user.js) | Yearning Query Result Datetime Formatter | 将查询结果中的 JavaScript Date 字符串格式化为 `yyyy-MM-dd HH:mm:ss` | 无额外配置 |
+| [查询结果视图切换](scripts/yearning-query-result-view-switcher.user.js) | Yearning Query Result View Switcher | 在网格视图和逐条表单视图之间切换，并显示字段 `COMMENT` | 通过 Yearning 同源接口读取字段注释 |
 
 ## 使用前必须修改的内容
 
@@ -57,12 +57,12 @@ https://raw.githubusercontent.com/<GitHub 用户名>/yearning-tampermonkey-toolk
 
 大多数使用者只需替换 `@match` 中的 `{IP}` 和 `{PORT}`。以下常量可以按实际需求调整：
 
-| 脚本 | 常量 | 默认值 | 用途 |
-| --- | --- | --- | --- |
-| 数据库表名搜索结果过滤 | `MAX_ROWS` | `200` | 表数据查看的前端最大展示行数 |
-| 数据库表名搜索结果过滤 | `QUERY_TIMEOUT` | `30000` | 查询超时时间，单位为毫秒 |
-| 左右面板拖拽调整 | `DEFAULT_RATIO` | `4 / 24` | 首次使用时左侧面板的默认宽度比例 |
-| SQL 变更行数检测 | `QUERY_TIMEOUT` | `30000` | 统计查询超时时间，单位为毫秒 |
+| 脚本 | 英文名称 | 常量 | 默认值 | 用途 |
+| --- | --- | --- | --- | --- |
+| 数据库表名搜索结果过滤 | Yearning Table Search Filter | `MAX_ROWS` | `200` | 表数据查看的前端最大展示行数 |
+| 数据库表名搜索结果过滤 | Yearning Table Search Filter | `QUERY_TIMEOUT` | `30000` | 查询超时时间，单位为毫秒 |
+| 左右面板拖拽调整 | Yearning Panel Resizer | `DEFAULT_RATIO` | `4 / 24` | 首次使用时左侧面板的默认宽度比例 |
+| SQL 变更行数检测 | Yearning SQL Change Row Counter | `QUERY_TIMEOUT` | `30000` | 统计查询超时时间，单位为毫秒 |
 
 如果所在网络不能访问 `unpkg.com`，需要将 SQL 变更行数检测脚本的 `@require` 改为可信的内部镜像地址，并确保仍使用兼容的 `@msgpack/msgpack` 版本。
 
