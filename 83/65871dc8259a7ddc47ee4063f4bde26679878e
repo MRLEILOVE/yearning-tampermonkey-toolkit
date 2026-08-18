@@ -1,0 +1,14 @@
+README.md
+  h_90c9c948bf5ad1 9-15,60-65
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "8365871dc8259a7ddc47ee4063f4bde26679878e",
+  "prompts": {},
+  "humans": {
+    "h_90c9c948bf5ad1": {
+      "author": "codex <codex@users.noreply.github.com>"
+    }
+  }
+}
