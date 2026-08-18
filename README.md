@@ -47,12 +47,6 @@
 4. 按上一节将脚本头部的 `{IP}` 和 `{PORT}` 替换为实际值。
 5. 保存脚本，刷新已经登录的 Yearning 页面。
 
-项目上传到 GitHub 后，也可以打开脚本的 Raw 地址进行安装。Raw 地址格式为：
-
-```text
-https://raw.githubusercontent.com/<GitHub 用户名>/yearning-tampermonkey-toolkit/main/scripts/<脚本文件名>.user.js
-```
-
 ## 可选调整
 
 大多数使用者只需替换 `@match` 中的 `{IP}` 和 `{PORT}`。以下常量可以按实际需求调整：
